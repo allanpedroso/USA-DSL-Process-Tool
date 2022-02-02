@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'use_ico_only' => false,
+    'use_ico_only' => true,
     'use_full_favicon' => false,
 
     /*
@@ -193,7 +193,7 @@ return [
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
-    'profile_url' => false,
+    'profile_url' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -232,12 +232,35 @@ return [
         ],
         [
             'text'        => 'My Projects',
+            'submenu' => [
+                'text' => 'Canopus',
+                'submenu' => [
+                    'text' => 'Planning',
+                    'url' => '/planning',
+                    'icon' => 'fas fa-ruler'
+                ],
+                [
+                    'text' => 'Execution',
+                    'url' => '/execution',
+                    'icon' => 'fas fa-plane-departure'
+                ],
+                [
+                    'text' => 'Analysis',
+                    'url' => '/analysis',
+                    'icon' =>'fas fa-search'
+                ],
+                [
+                    'text' => 'Report',
+                    'url' => '#',
+                    'icon' =>'fas fa-flag-checkered'
+                ]
+            ],
             'url'         => '#',
             'icon'        => 'far fa-folders',
         ],
         [
             'text'        => 'New Project',
-            'url'         => '#',
+            'url'         => '/newProject',
             'icon'        => 'fas fa-folder-plus',
         ],
         ['header' => 'account_settings'],

@@ -138,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/example-app/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/example-app/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,10 +151,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Allan\Desktop\untitled\example-app\resources\views" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\database\migrations" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\public\vendor\form-wizard" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\config" />
-      <recent name="C:\Users\Allan\Desktop\untitled\example-app\resources\views" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\public\vendor\adminlte\dist\img" />
     </key>
   </component>
@@ -183,6 +183,22 @@
       <workItem from="1621397139061" duration="1374000" />
       <workItem from="1621401891529" duration="1584000" />
       <workItem from="1621403538565" duration="1785000" />
+      <workItem from="1624986490381" duration="2213000" />
+      <workItem from="1625425905698" duration="21228000" />
+      <workItem from="1626113909821" duration="2982000" />
+      <workItem from="1629764291653" duration="27000" />
+      <workItem from="1630948020686" duration="4119000" />
+      <workItem from="1632482485681" duration="8565000" />
+      <workItem from="1632500861958" duration="4205000" />
+      <workItem from="1632505907242" duration="2137000" />
+      <workItem from="1633540069762" duration="119000" />
+      <workItem from="1634728760710" duration="8839000" />
+      <workItem from="1634749743412" duration="8326000" />
+      <workItem from="1634788121012" duration="1621000" />
+      <workItem from="1635419791280" duration="3272000" />
+      <workItem from="1635455089970" duration="336000" />
+      <workItem from="1637213415644" duration="5783000" />
+      <workItem from="1637237427789" duration="829000" />
     </task>
     <servers />
   </component>
@@ -190,40 +206,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1817" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618559679037">
-      <screen x="1680" y="186" width="1366" height="728" />
-    </state>
-    <state x="1817" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618559679037" />
-    <state x="1772" y="278" width="1182" height="544" key="DiffContextDialog" timestamp="1618552886830">
-      <screen x="1680" y="186" width="1366" height="728" />
-    </state>
-    <state x="1772" y="278" width="1182" height="544" key="DiffContextDialog/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618552886830" />
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1618518230268">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1629764317038">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/1680.186.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1618518230268" />
-    <state x="2181" y="273" key="NewPhpClassDialog" timestamp="1618552610224">
-      <screen x="1680" y="186" width="1366" height="728" />
+    <state x="620" y="260" key="FileChooserDialogImpl/-1366.135.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1629764317038" />
+    <state x="642" y="364" key="NewPhpFileDialog" timestamp="1630955511022">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="2181" y="273" key="NewPhpClassDialog/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618552610224" />
-    <state x="1864" y="9" key="SettingsEditor" timestamp="1620639398092">
-      <screen x="1680" y="0" width="1366" height="728" />
+    <state x="642" y="364" key="NewPhpFileDialog/-1366.137.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1630955511022" />
+    <state x="674" y="428" key="NewPhpFileDialog/1680.0.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1625473838431" />
+    <state x="2139" y="136" key="run.anything.popup" timestamp="1624991099309">
+      <screen x="1366" y="-126" width="1600" height="860" />
     </state>
-    <state x="1864" y="9" key="SettingsEditor/1680.0.1366.728/0.0.1680.1010@1680.0.1366.728" timestamp="1620639398092" />
-    <state width="498" height="398" key="SwitcherDM" timestamp="1618552801567">
-      <screen x="1680" y="186" width="1366" height="728" />
+    <state x="2139" y="136" key="run.anything.popup/0.0.1366.728/1366.-126.1600.860@1366.-126.1600.860" timestamp="1624991099309" />
+    <state x="426" y="68" width="828" height="943" key="search.everywhere.popup" timestamp="1625462595222">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/1680.186.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1618470659767" />
-    <state width="498" height="398" key="SwitcherDM/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618552801567" />
-    <state x="1772" y="278" width="1182" height="544" key="com.intellij.history.integration.ui.views.RecentChangeDialog" timestamp="1618554717633">
-      <screen x="1680" y="186" width="1366" height="728" />
-    </state>
-    <state x="1772" y="278" width="1182" height="544" key="com.intellij.history.integration.ui.views.RecentChangeDialog/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618554717633" />
-    <state x="2026" y="49" width="673" height="679" key="search.everywhere.popup" timestamp="1620643105324">
-      <screen x="1680" y="0" width="1366" height="728" />
-    </state>
-    <state x="2026" y="49" width="673" height="679" key="search.everywhere.popup/1680.0.1366.728/0.0.1680.1010@1680.0.1366.728" timestamp="1620643105324" />
-    <state x="426" y="68" width="827" height="941" key="search.everywhere.popup/1680.186.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1619317411798" />
-    <state x="2026" y="235" width="672" height="678" key="search.everywhere.popup/1680.186.1366.728/0.0.1680.1010@1680.186.1366.728" timestamp="1618552659414" />
+    <state x="426" y="68" width="828" height="943" key="search.everywhere.popup/1680.0.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1625462595222" />
   </component>
 </project>

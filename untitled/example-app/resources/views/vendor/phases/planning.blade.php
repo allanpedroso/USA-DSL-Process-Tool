@@ -12,7 +12,7 @@
 
 
 @section('content_header')
-    <h1 class="m-0 ml-3 text-dark">New Project</h1>
+    <h1 class="m-0 text-dark">New Project</h1>
 @stop
 
 @section('content')
@@ -28,12 +28,12 @@
 
 
 
-
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-xs-6 w-50 p-2">
+            <div class="col-lg-12 col-xs-6 w-50 p-3">
                 <form id="eval_register" class="sf-border" action="{{ route('newProject.store') }}" method="post">
                     <fieldset>
-                        <legend>Evaluation and Study Types</legend>
+                        <legend>Define informed consent term</legend>
                         <div class="row pt-lg-5">
                             <div class="col-lg-6 col-xs-6">
                                 <label>Select the usability evaluation type</label>
@@ -49,6 +49,8 @@
                                 <div class="form-group pt-lg-5">
                                     <label>Select the empirical method study</label>
                                     <br>
+
+
                                     <div id="surveyOp" style="visibility: hidden">
                                         <input id="radioSurvey" type="radio" name="empiricalMethod" value="survey" data-parsley-group="block0" required>
                                         <label>Survey</label>
@@ -141,20 +143,16 @@
                 </form>
             </div>
         </div>
-
+    </div>
 
 @stop
 
 @section('adminlte_js')
-
-
     <script>
         var sfw;
         $(document).ready(function () {
-         sfw = $("#eval_register").stepFormWizard({
-                showNav: 'right',
-                height: 600,
-                showNavNumbers: false,
+            sfw = $("#eval_register").stepFormWizard({
+                showNav: 'top',
                 onNext: function (i) {
                     var valid = $("#eval_register").parsley().validate('block' + i);
                     sfw.refresh();
@@ -162,10 +160,9 @@
                 },
                 onFinish: function (i) {
                     var valid = $("#eval_register").parsley().validate();
-                    window.open("{{('/planning')}}", false);
+                    sfw.refresh();
                     return valid;
-
-                },
+                }
             });
 
         })
@@ -175,7 +172,6 @@
                 scrollButtons: {
                     enable: true
                 }
-
             });
         });
     </script>
@@ -194,7 +190,9 @@
                 document.getElementById('quasiExperimentOp').style.visibility = 'hidden';
                 radioSurvey = document.getElementById('radioSurvey');
                 radioSurvey.checked = true;
-            };
+
+            }
+            ;
         }
     </script>
     <script type="text/javascript">jQuery("#eval_register").parsley();</script>

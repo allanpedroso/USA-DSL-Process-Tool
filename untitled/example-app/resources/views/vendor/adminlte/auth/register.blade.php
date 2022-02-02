@@ -20,7 +20,7 @@
         {{-- Name field --}}
         <div class="input-group mb-3">
             <input type="text" name="name" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
-                   value="{{ old('name') }}" placeholder="{{ __('adminlte::adminlte.full_name') }}" autofocus>
+                   value="{{ old('name') }}" placeholder="Name" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -32,6 +32,40 @@
                 </div>
             @endif
         </div>
+
+        {{-- Surname field --}}
+        <div class="input-group mb-3">
+            <input type="text" name="surname" class="form-control {{ $errors->has('surname') ? 'is-invalid' : '' }}"
+                   value="{{ old('surname') }}" placeholder="Surname" autofocus>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                </div>
+            </div>
+            @if($errors->has('surname'))
+                <div class="invalid-feedback">
+                    <strong>{{ $errors->first('surname') }}</strong>
+                </div>
+            @endif
+        </div>
+
+
+        {{-- institution/company field --}}
+        <div class="input-group mb-3">
+            <input type="text" name="institution" class="form-control {{ $errors->has('institution') ? 'is-invalid' : '' }}"
+                   value="{{ old('institution') }}" placeholder="Institution or Company" autofocus>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-building {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                </div>
+            </div>
+            @if($errors->has('institution'))
+                <div class="invalid-feedback">
+                    <strong>{{ $errors->first('institution') }}</strong>
+                </div>
+            @endif
+        </div>
+
 
         {{-- Email field --}}
         <div class="input-group mb-3">

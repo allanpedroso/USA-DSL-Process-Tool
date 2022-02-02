@@ -17,15 +17,31 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/newProject', function() {
-    return view('newProject');
-});#->name('home')->middleware('auth');
 
-Auth::routes();
 
-Route::get('/newProject', [App\Http\Controllers\HomeController::class, 'newProject'])->name('newProject');
-Route::post('/newProject',[App\Http\Controllers\HomeController::class, 'store'])->name('newProject.store');
+Route::group(['middleware' =>'auth'], function(){
+    Route::get('/', function (){
+        return view('home');
+    })->name('home');
+    Route::get('/home', function (){
+        return view('home');
+    })->name('home');
+    Route::get('/newProject', [App\Http\Controllers\HomeController::class, 'newProject'])->name('newProject');
+    Route::post('/newProject',[App\Http\Controllers\HomeController::class, 'store'])->name('newProject.store');
+    Route::get('/planning', function (){
+        return view('planning');
+    });
+    Route::get('/analysis', function (){
+        return view('analysis');
+    });
+    Route::get('/execution', function (){
+        return view('execution');
+    });
+});
 
+Route::get('/userRegister' , function (){
+    return view('auth/register');
+});
 Route::get('/login', function() {
     return view('auth/login');
-});
+})->name('login');

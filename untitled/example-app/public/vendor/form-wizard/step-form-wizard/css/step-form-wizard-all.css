@@ -90,7 +90,9 @@ clearfix:before,
   float: left;
   width: 20%;
   height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  caret-color: transparent;
+}
 
 .sf-nav-right {
   float: right;
@@ -116,6 +118,7 @@ clearfix:before,
   cursor: pointer; }
 
 .sf-nav-right li, sf-nav-left li {
+    caret-color: transparent;
   padding-right: 10px; }
 
 .sf-nav-on-left {
@@ -301,7 +304,8 @@ li.sf-li-nonumber {
     font-size: 16px;
     font-weight: 700;
     overflow: hidden;
-    background: #ffd687; }
+    background: #ffd687;
+  caret-color: transparent}
   .sf-t1 .sf-nav-left .sf-nav-number, .sf-t1 .sf-nav-right .sf-nav-number {
     width: 50px; }
   .sf-t1 .sf-nav-number-inner {
@@ -696,7 +700,7 @@ li.sf-li-nonumber {
     position: absolute;
     left: 12px;
     top: 0;
-    font-size: 85px;
+    font-size: 30px;
     font-weight: 650;
     overflow: hidden; }
   .sf-t2 .sf-nav-number-inner {
