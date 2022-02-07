@@ -18,6 +18,7 @@
       </list>
     </option>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/example-app/vendor/facade/ignition" />
@@ -199,6 +200,17 @@
       <workItem from="1635455089970" duration="336000" />
       <workItem from="1637213415644" duration="5783000" />
       <workItem from="1637237427789" duration="829000" />
+      <workItem from="1638400121467" duration="827000" />
+      <workItem from="1638962979243" duration="635000" />
+      <workItem from="1639012105723" duration="6897000" />
+      <workItem from="1639051342566" duration="614000" />
+      <workItem from="1642547076146" duration="15431000" />
+      <workItem from="1642680100592" duration="1333000" />
+      <workItem from="1643027212278" duration="1436000" />
+      <workItem from="1643221670464" duration="2310000" />
+      <workItem from="1643311746300" duration="4842000" />
+      <workItem from="1643825999203" duration="1857000" />
+      <workItem from="1643854299460" duration="599000" />
     </task>
     <servers />
   </component>
@@ -206,22 +218,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1629764317038">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="770" y="440" key="NewPhpFileDialog" timestamp="1642624252575">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/-1366.135.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1629764317038" />
-    <state x="642" y="364" key="NewPhpFileDialog" timestamp="1630955511022">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="770" y="440" key="NewPhpFileDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1642624252575" />
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1643826364392">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="642" y="364" key="NewPhpFileDialog/-1366.137.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1630955511022" />
-    <state x="674" y="428" key="NewPhpFileDialog/1680.0.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1625473838431" />
-    <state x="2139" y="136" key="run.anything.popup" timestamp="1624991099309">
-      <screen x="1366" y="-126" width="1600" height="860" />
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1643826364392" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1642566887652">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2139" y="136" key="run.anything.popup/0.0.1366.728/1366.-126.1600.860@1366.-126.1600.860" timestamp="1624991099309" />
-    <state x="426" y="68" width="828" height="943" key="search.everywhere.popup" timestamp="1625462595222">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="426" y="68" width="828" height="943" key="search.everywhere.popup/1680.0.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1625462595222" />
+    <state x="616" y="240" key="run.anything.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1642566887652" />
   </component>
 </project>

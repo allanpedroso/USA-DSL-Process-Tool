@@ -231,6 +231,11 @@ return [
             'topnav' => true,
         ],
         [
+            'text'        => 'New Project',
+            'url'         => '/newProject',
+            'icon'        => 'fas fa-folder-plus',
+        ],
+        [
             'text'        => 'My Projects',
             'submenu' => [
                 'text' => 'Canopus',
@@ -257,11 +262,6 @@ return [
             ],
             'url'         => '#',
             'icon'        => 'far fa-folders',
-        ],
-        [
-            'text'        => 'New Project',
-            'url'         => '/newProject',
-            'icon'        => 'fas fa-folder-plus',
         ],
         ['header' => 'account_settings'],
         [

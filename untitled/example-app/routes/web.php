@@ -37,6 +37,9 @@ Route::group(['middleware' =>'auth'], function(){
     Route::get('/execution', function (){
         return view('execution');
     });
+    Route::get('/executionSubjects', function (){
+        return view('participant.execution_sub');
+    });
 });
 
 Route::get('/userRegister' , function (){

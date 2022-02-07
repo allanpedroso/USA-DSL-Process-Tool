@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('New Project', 'Usa-DSL Tool')
+@section('Analysis Phase', 'Usa-DSL Tool')
 @section('adminlte_css')
     <link rel="stylesheet" href="{{asset('vendor/form-wizard/step-form-wizard/css/step-form-wizard-all.css')}}"
           type="text/css" media="screen, projection">
