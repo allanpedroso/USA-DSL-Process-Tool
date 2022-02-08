@@ -11335,6 +11335,9 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
 .layout-top-nav .wrapper .main-footer {
   margin-left: 0;
 }
+#selectStudy {
+    display: none;
+}
 
 body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .content-wrapper, body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .content-wrapper::before,
 body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-footer,
