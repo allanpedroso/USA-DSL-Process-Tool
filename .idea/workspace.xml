@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc37d3d3-d024-48fa-8ffd-0e02c9c001d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/vendor/steps/jquery.steps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/steps/jquery.steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/checklist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/usa_dsl_tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/usa_dsl_tool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newProject.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newProject.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/participant/execution_sub.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/participant/execution_sub.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +152,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor/steps" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -238,7 +232,7 @@
       <workItem from="1644262995478" duration="4789000" />
       <workItem from="1644341656455" duration="8102000" />
       <workItem from="1644413813408" duration="12787000" />
-      <workItem from="1644551833277" duration="25549000" />
+      <workItem from="1644551833277" duration="25966000" />
     </task>
     <servers />
   </component>
