@@ -169,7 +169,7 @@
             });
 
         })
-        $(window).on('load', function () {
+        $(document).ready(function () {
             $(".sf-step").mCustomScrollbar({
                 theme: "dark-3",
                 scrollButtons: {

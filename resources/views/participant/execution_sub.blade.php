@@ -8,6 +8,10 @@
           href="{{asset('vendor/form-wizard/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.min.css')}}">
     <link rel="stylesheet"
           href="{{asset('vendor/form-wizard/plugins/parsley/parsley.css')}}">
+    <script src="{{asset('vendor/steps/jquery.steps.js')}}"></script>
+    <link rel="stylesheet"
+          href="{{asset('vendor/steps/jquery.steps.css')}}">
+
 @stop
 
 
@@ -196,7 +200,7 @@
 
                                         <label class="radio-inline primary pr-lg-2">
                                             <input name="option" type="radio" value="yes"
-                                                   >
+                                            >
                                             Yes
                                         </label>
 
@@ -213,7 +217,7 @@
 
                                         <label class="radio-inline primary pr-lg-2">
                                             <input name="option" type="radio" value="yes"
-                                                   >
+                                            >
                                             Yes
                                         </label>
 
@@ -230,7 +234,7 @@
 
                                         <label class="checkbox primary pr-lg-2">
                                             <input name="studies" type="checkbox" value="caseStudy"
-                                                   >
+                                            >
                                             Case Study
                                         </label>
 
@@ -248,9 +252,10 @@
 
 
                         <fieldset>
-                            <legend>Get Instruments of Instructions and Training </legend>
+                            <legend>Get Instruments of Instructions and Training</legend>
 
-                            <label class="pt-5 row justify-content-center">Download instruments and perform the use cenario</label>
+                            <label class="pt-5 row justify-content-center">Download instruments and perform the use
+                                cenario</label>
 
                             <div class="col-lg-12 col-xs-6 pt-lg-5">
                                 <div class="row justify-content-center">
@@ -276,41 +281,216 @@
                                     <tbody>
                                     <tr>
                                         <td><label for="scenarioId">Scenario ID:</label></td>
-                                        <td><input class="form-control" type="text" id="scenarioId" ></td>
+                                        <td><input class="form-control" type="text" id="scenarioId"></td>
                                     </tr>
                                     <tr>
                                         <td><label for="scenarioName">Scenario Name:</label></td>
-                                        <td><input class="form-control" type="text" id="scenarioName" ></td>
+                                        <td><input class="form-control" type="text" id="scenarioName"></td>
                                     </tr>
                                     <tr>
                                         <td><label for="scenarioDesc">Description:</label></td>
-                                        <td><textarea class="form-control" type="text" id="scenarioDesc" ></textarea></td>
+                                        <td><textarea class="form-control" type="text" id="scenarioDesc"></textarea>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><label for="scenarioGoals">Goals:</label></td>
-                                        <td><textarea class="form-control" type="text" id="scenarioGoals" ></textarea></td>
+                                        <td><textarea class="form-control" type="text" id="scenarioGoals"></textarea>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><label for="scenarioTime">Expected time:</label></td>
-                                        <td><input class="form-control" type="time" id="scenarioTime" ></td>
+                                        <td><input class="form-control" type="time" id="scenarioTime"></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </fieldset>
                         <fieldset>
-                            <legend>Checklist</legend>
-                                <h:form id="checklist" class="sf-border col-12">
-                                    <fieldset>
-                                        <legend>Heuristic Checklist</legend>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend>h2</legend>
-                                    </fieldset>
-                                </h:form>
+                            <legend>Questionnaire Post-Evaluation</legend>
+                            <div id="checklistEvalPost">
+                                <form action="">
+                                    <h1>H1</h1>
+                                    <div>
+                                        <p class="card-subtitle p-4 mt-2">Visibility of system status </p>
+                                        <table class="table table-responsive-lg">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" class="align-middle">Question</th>
+                                                <th scope="col" class="align-middle text-center">Apply</th>
+                                                <th scope="col" class="align-middle align-content-center">Not apply</th>
+                                                <th scope="col" class="align-middle">Description of each error occurrence</th>
+                                                <th scope="col" class="align-middle">Severity (Check each of the problems found)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class=" text-justify">
+                                                <td>Does the Graphical DSL provide immediate and adequate feedback on its status for each user action? For example, after an include or exclude task the language displays a commit message?</td>
+                                                <td class="justify-content-center"><div class="form-check"><input class="form-check-input text-center"  type="radio" name="q1h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input text-center"  type="radio" name="q1h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Does the Textual DSL provide immediate and adequate feedback on its status for each user action? For example, after an include or exclude task the language displays a commit message?	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q2h1apply" value="apply"></div></td>
+                                                <td class="text-center"><div class="form-check"><input class="form-check-input d-block"  type="radio" name="q2h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do the elements available for the user specifically execute only one command? For example, the "undo" button only performs undo actions.	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q3h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q3h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do all alert and error messages that DSL (Textual or Grafica) provides stay on the screen long enough to be read more than once or (preferably) until the user chooses to close them?	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q4h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q4h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are the Textual and Graphical DSLs structured in a coupled way? For example, if the user changes something on the Textual DSL, this change must be observed on the Graphical DSL and if the user changes something on the Visual DSL, this change must be observed on the Textual DSL.</td>
+                                                <td><div class="form-check"><input class="form-check-input" type="radio" name="q5h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q5h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h1>H2</h1>
+
+                                    <div> <table class="table table-responsive-lg">
+                                            <p class="card-subtitle p-4 mt-2">Match between language and the real world domain  </p>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" class="align-middle">Question</th>
+                                                <th scope="col" class="align-middle text-center">Apply</th>
+                                                <th scope="col" class="align-middle align-content-center">Not apply</th>
+                                                <th scope="col" class="align-middle">Description of each error occurrence</th>
+                                                <th scope="col" class="align-middle">Severity (Check each of the problems found)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class=" text-justify">
+                                                <td>Does the Graphical DSL provide immediate and adequate feedback on its status for each user action? For example, after an include or exclude task the language displays a commit message?</td>
+                                                <td class="justify-content-center"><div class="form-check"><input class="form-check-input text-center"  type="radio" name="q1h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input text-center"  type="radio" name="q1h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Does the Textual DSL provide immediate and adequate feedback on its status for each user action? For example, after an include or exclude task the language displays a commit message?	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q2h1apply" value="apply"></div></td>
+                                                <td class="text-center"><div class="form-check"><input class="form-check-input d-block"  type="radio" name="q2h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do the elements available for the user specifically execute only one command? For example, the "undo" button only performs undo actions.	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q3h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q3h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do all alert and error messages that DSL (Textual or Grafica) provides stay on the screen long enough to be read more than once or (preferably) until the user chooses to close them?	</td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q4h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q4h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are the Textual and Graphical DSLs structured in a coupled way? For example, if the user changes something on the Textual DSL, this change must be observed on the Graphical DSL and if the user changes something on the Visual DSL, this change must be observed on the Textual DSL.</td>
+                                                <td><div class="form-check"><input class="form-check-input" type="radio" name="q5h1apply" value="apply"></div></td>
+                                                <td><div class="form-check"><input class="form-check-input"  type="radio" name="q5h1apply" value="ntapply"></div></td>
+                                                <td><textarea name="descError" rows="4"></textarea></td>
+                                                <td><select class="form-control text-center" name="severity" id="severity">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                                            </tr>
+                                            </tbody>
+                                        </table></div>
+                                    <h1>H3</h1>
+                                    <div></div>
+                                    <h1>H4</h1>
+                                    <div></div>
+                                    <h1>H5</h1>
+                                    <div></div>
+                                    <h1>H6</h1>
+                                    <div></div>
+                                    <h1>H7</h1>
+                                    <div></div>
+                                    <h1>H8</h1>
+                                    <div></div>
+                                </form>
+
+                            </div>
                         </fieldset>
 
                     </form>
+
                 </div>
             </div>
         </div>
@@ -320,12 +500,20 @@
 
 
 @section('adminlte_js')
+
+    <script>
+        $(function(){
+            $("#checklistEvalPost").steps({titleTemplate: "#title#" });
+        });
+
+    </script>
+
     <script>
         var sfw;
         $(document).ready(function () {
             sfw = $("#executionSubjects").stepFormWizard({
                 showNav: 'right',
-                height: '600',
+                height: '800',
                 duration: 550,
             });
             sfw.navNumber(0, 'E2')
@@ -333,11 +521,14 @@
             sfw.navNumber(2, 'E5')
             sfw.navNumber(3, 'E1')
             sfw.navNumber(4, 'E8')
-            sfw.navNumber(5, 'E9')
+            sfw.navNumber(5, 'E9a')
+            sfw.navNumber(6, 'E9d')
+
+
 
         })
 
-        $(window).on('load', function () {
+        $(document).ready(function () {
             $(".sf-step").mCustomScrollbar({
                 theme: "dark-3",
                 scrollButtons: {
@@ -349,20 +540,14 @@
         $('#profileQuestionnaire').on('shown.bs.modal', function () {
             $('#btnModalProfile').trigger('focus')
         })
+
+
     </script>
-    <script>
-        var hck;
-        $(document).ready(function () {
-            hck = $("#checklist").stepFormWizard({
-                showNav: 'top',
-                height: '600',
-                duration: 550,
-            });
-        })
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js" integrity="sha512-gH0SqyjTN7WJAtki1UvqOkhWi3WsF9LY05BMwdcSq6QdFDXrXeXy0q8iP0YmBXCqo7OnSgdIPrC5Vqn8/KRu/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">jQuery("#planningPhase").parsley();</script>
     <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('vendor/form-wizard/plugins/jquery-2.1.4.min.js')}}"></script>
+    <script src="{{asset('vendor/steps/jquery.steps.js')}}"></script>
     <script src="{{asset('vendor/form-wizard/step-form-wizard/js/step-form-wizard.js')}}"></script>
     <script
         src="{{asset('vendor/form-wizard/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>

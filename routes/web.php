@@ -40,6 +40,9 @@ Route::group(['middleware' =>'auth'], function(){
     Route::get('/executionSubjects', function (){
         return view('participant.execution_sub');
     });
+    Route::get('/checklist', function (){
+        return view('checklist');
+    });
 });
 
 Route::get('/userRegister' , function (){

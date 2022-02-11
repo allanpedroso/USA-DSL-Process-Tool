@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc37d3d3-d024-48fa-8ffd-0e02c9c001d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/vendor/steps/jquery.steps.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/steps/jquery.steps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/checklist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/usa_dsl_tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/usa_dsl_tool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/sidebar/menu-item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/sidebar/menu-item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newProject.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newProject.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/participant/execution_sub.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/participant/execution_sub.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor/steps" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -169,11 +176,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\allan\Documents\usa-dsl-process-tool\USA-DSL-Process-Tool\public\vendor\steps" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\resources\views" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\database\migrations" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\public\vendor\form-wizard" />
       <recent name="C:\Users\Allan\Desktop\untitled\example-app\config" />
-      <recent name="C:\Users\Allan\Desktop\untitled\example-app\public\vendor\adminlte\dist\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -229,7 +236,9 @@
       <workItem from="1643825999203" duration="1857000" />
       <workItem from="1643854299460" duration="599000" />
       <workItem from="1644262995478" duration="4789000" />
-      <workItem from="1644341656455" duration="5750000" />
+      <workItem from="1644341656455" duration="8102000" />
+      <workItem from="1644413813408" duration="12787000" />
+      <workItem from="1644551833277" duration="25549000" />
     </task>
     <servers />
   </component>
