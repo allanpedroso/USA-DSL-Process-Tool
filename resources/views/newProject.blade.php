@@ -27,10 +27,9 @@
     </style>
 
 
-
-
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-xs-6 w-50 p-2">
+            <div class="col-12 col-xs-12 w-50 p-2">
                 <form id="eval_register" class="sf-border" action="{{ route('newProject.store') }}" method="post">
                     <fieldset>
                         <legend>Evaluation and Study Types</legend>
@@ -141,6 +140,10 @@
                 </form>
             </div>
         </div>
+    </div>
+
+
+
 
 
 @stop
@@ -151,22 +154,43 @@
     <script>
         var sfw;
         $(document).ready(function () {
-         sfw = $("#eval_register").stepFormWizard({
-                showNav: 'right',
-                height: 600,
-                showNavNumbers: false,
-                onNext: function (i) {
-                    var valid = $("#eval_register").parsley().validate('block' + i);
-                    sfw.refresh();
-                    return valid;
-                },
-                onFinish: function (i) {
-                    var valid = $("#eval_register").parsley().validate();
-                    window.open("{{('/planning')}}", false);
-                    return valid;
 
-                },
-            });
+            if($(window).width > 300){
+                sfw = $("#eval_register").stepFormWizard({
+                    showNav: 'right',
+                    height: 600,
+                    showNavNumbers: true,
+                    onNext: function (i) {
+                        var valid = $("#eval_register").parsley().validate('block' + i);
+                        sfw.refresh();
+                        return valid;
+                    },
+                    onFinish: function (i) {
+                        var valid = $("#eval_register").parsley().validate();
+                        window.open("{{('/planning')}}", false);
+                        return valid;
+
+                    },
+                });
+            } else {
+                sfw = $("#eval_register").stepFormWizard({
+                    showNav: 'top',
+                    height: 'auto',
+                    showNavNumbers: true,
+                    onNext: function (i) {
+                        var valid = $("#eval_register").parsley().validate('block' + i);
+                        sfw.refresh();
+                        return valid;
+                    },
+                    onFinish: function (i) {
+                        var valid = $("#eval_register").parsley().validate();
+                        window.open("{{('/planning')}}", false);
+                        return valid;
+
+                    },
+                });
+            }
+
 
         })
         $(document).ready(function () {

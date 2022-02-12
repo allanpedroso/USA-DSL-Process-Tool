@@ -29,7 +29,7 @@
     <div class="row">
         <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-12 col-xs-6 w-50 p-3">
+                    <div class="col-12 col-xs-6 w-50 p-3">
                         <form class="col-12" id="analysisPhase" class="sf-border" >
 
                             <!--PREPARE THE EVALUATION-->
@@ -96,7 +96,7 @@
         $(document).ready(function () {
             sfw = $("#analysisPhase").stepFormWizard({
                 showNav: 'right',
-                height: '550',
+                height: 'auto',
                 duration: 550,
                 onNext: function (i) {
                     var valid = $("#planningPhase").parsley().validate('block' + i);

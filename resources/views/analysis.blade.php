@@ -27,10 +27,10 @@
     </style>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-12">
                 <div class="row">
-                    <div class="col-md-12 col-xs-6 w-50 p-3">
-                        <form class="col-12" id="analysisPhase" class="sf-border"  method="post">
+                    <div class="col-12 col-xs-6 w-50 p-3">
+                        <form id="analysisPhase" class="sf-border"  method="post">
 
                             <!--ANALYSE EVALUATOR PROFILE-->
                             <fieldset>

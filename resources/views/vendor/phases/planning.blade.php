@@ -30,7 +30,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-xs-6 w-50 p-3">
+            <div class="col-12 col-xs-6 w-50 p-3">
                 <form id="eval_register" class="sf-border" action="{{ route('newProject.store') }}" method="post">
                     <fieldset>
                         <legend>Define informed consent term</legend>

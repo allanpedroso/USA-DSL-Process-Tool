@@ -1,6 +1,6 @@
 @inject('menuItemHelper', 'JeroenNoten\LaravelAdminLte\Helpers\MenuItemHelper')
 
-@if ($menuItemHelper->isLegacy($item))
+@if ($menuItemHelper->isLegacySearch($item))
 
     {{-- Search form --}}
     @include('adminlte::partials.navbar.menu-item-search-form')
