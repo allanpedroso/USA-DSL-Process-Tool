@@ -91,14 +91,7 @@
                     <fieldset>
                         <legend>Define instruments of data gathering</legend>
                         <div class="col-lg-6 col-xs-6 pt-lg-3">
-                            <div class="form-group">
-                                <input type="checkbox" name="instrument" value="heuristicCheck" id="heuristicCheck">
-                                <label for="heuristicCheck">Heuristic Evaluation Checklist for DSL</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="instrument" value="usabilityCheck" id="usabilityCheck">
-                                <label for="usabilityCheck">Usability Questionnaire</label>
-                            </div>
+
                             <div class="form-group">
                                 <input type="checkbox" name="instrument" value="scriptInterview" id="scriptInterview">
                                 <label for="scriptInterview">Script Interview</label>
